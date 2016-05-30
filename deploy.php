@@ -14,7 +14,7 @@ server( 'production', 'c6889.cloudnet.se', 22 )
     ->env('domain','www.orasolv.info')
     ->identityFile();
 
-set('repository', 'https://github.com/ekandreas/orasolv-intra');
+set('repository', 'https://github.com/ekandreas/orasolvinfo');
 
 // Symlink the .env file for Bedrock
 set('env', 'prod');
