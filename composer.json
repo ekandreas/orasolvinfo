@@ -36,9 +36,20 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.5.2",
+    "johnpbloch/wordpress": "*",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wp-papi/papi": "*",
+    "johnbillion/query-monitor": "*",
+    "wpackagist-plugin/groups": "*",
+    "wpackagist-plugin/redirection": "*",
+    "wpackagist-plugin/disable-emojis":"*",
+    "roots/soil": "*",
+    "johnbillion/extended-cpts":"*",
+    "wpackagist-plugin/resize-image-after-upload":"*",
+    "ekandreas/bladerunner":"*",
+    "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
+    "wpackagist-plugin/mce-table-buttons": "*"    
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

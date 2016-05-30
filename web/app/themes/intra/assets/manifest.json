@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "bower": ["jquery","bootstrap-sass","morris.js","raphael","vue","fontawesome"],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "bower": ["fontawesome"],
+      "main": true
+    },
+    "unauthenticated.js": {
+      "files": [
+        "scripts/unauthenticated.js"
+      ]
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://intra.dev"
+  }
+}
