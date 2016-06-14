@@ -52,7 +52,8 @@
     "wpackagist-plugin/mce-table-buttons": "*"    
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1"
+    "squizlabs/php_codesniffer": "^2.5.1",
+    "ekandreas/valet-deploy": "*"
   },
   "extra": {
     "installer-paths": {

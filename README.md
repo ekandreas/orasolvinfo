@@ -19,6 +19,20 @@ Simple Social Intranet based on the following components:
 Every component must be open source in the project.
 As for company specific integrations and functions, plugin develpment should be used.
 
+## Development environment
+This dev is setup with Laravel Valet using ekandreas/valet-deploy
+
+## Deployment
+To pull from production:
+```
+dep pull production
+```
+
+To deploy code:
+```
+dep deploy production
+```
+
 ## Development team
 [Andreas Ek](http://www.elseif.se) started the "intra" project/code base.
 
