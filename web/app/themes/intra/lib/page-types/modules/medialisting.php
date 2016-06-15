@@ -36,6 +36,22 @@ class MediaListing_Module_Type extends Papi_Page_Type
             ]
         );
 
+        $this->box( __('Typ av utvisning','lobbykit'), [
+                papi_property([
+                    'slug'  => 'show_as',
+                    'title' => __('Visa som...','lobbykit'),
+                    'type'  => 'radio',
+                    'settings' => [
+                      'items' => [
+                        'Visa som nedladdning av dokument' => 'downloads',
+                        'Visa som fristående bilder' => 'images',
+                        'Visa som bildspel' => 'gallery',
+                      ]
+                    ]
+                  ]),
+            ]
+        );
+
         $this->box( dirname(__FILE__) . '/parts/module.php' );
     }
 
