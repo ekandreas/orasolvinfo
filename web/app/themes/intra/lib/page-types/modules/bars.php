@@ -1,5 +1,5 @@
 <?php
-
+/*
 class Bars_Module_Type extends Papi_Page_Type
 {
 
@@ -38,3 +38,4 @@ class Bars_Module_Type extends Papi_Page_Type
     }
 
 }
+*/

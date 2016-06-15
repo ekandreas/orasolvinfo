@@ -1,5 +1,5 @@
 <?php
-
+/*
 class Lines_Module_Type extends Papi_Page_Type
 {
 
@@ -23,3 +23,4 @@ class Lines_Module_Type extends Papi_Page_Type
     }
 
 }
+*/
