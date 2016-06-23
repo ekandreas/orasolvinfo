@@ -1,1 +1,0 @@
-{"version":3,"sources":["../assets/scripts/customizer.js"],"names":["$","jQuery"],"mappings":"CAAA,SAAAA,KASAC","file":"customizer.js","sourcesContent":["(function($) {\n\n  /*wp.customize('header_nav_color', function(value) {\n    value.bind(function(to) {\n      $('.header').css('color', to);\n    });\n  });\n   */\n\n})(jQuery);\n"],"sourceRoot":"assets/scripts/"}
