@@ -34,6 +34,11 @@
 		@endif
 		{{ wp_reset_postdata() }}
 
+		@if($more=papi_get_field($module->id,'more'))
+			<hr/>
+			<a href="{{$more->url}}">{{ $more->title }}</a>
+		@endif
+
 	</div>
 
 </div>
