@@ -19,7 +19,7 @@ class Cpt
                     'show_ui' => true,
                     'show_in_menu' => 'edit.php?post_type=page',
                     'show_in_feed' => false,
-                    'rewrite' => ['slug'=>'lank','with_front'=>false,],
+                    'rewrite' => ['slug'=>'module','with_front'=>false,],
                     'supports' => array( 'title' ),
                     'labels' => [
                         'name'                  => __('Moduler','intra'),
