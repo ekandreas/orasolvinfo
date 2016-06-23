@@ -56,6 +56,15 @@ class Blogroll_Module_Type extends Papi_Page_Type
             ]
         );
 
+        $this->box( __('Puffar', 'intra'), [
+                papi_property([
+                    'slug'  => 'show_date',
+                    'title' => __('Visa datum','intra'),
+                    'type'  => 'bool',
+                ]),
+            ]
+        );
+
         $this->box( __('Mer', 'intra'), [
                 papi_property([
                     'slug'  => 'more',

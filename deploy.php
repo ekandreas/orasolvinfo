@@ -26,6 +26,7 @@ set('writable_dirs', ['web/app/uploads']);
 
 task('deploy:restart', function () {
     run("rm -f web/app/uploads/.cache/*");
+    run("service apache2 reload");
 })->desc('Refresh cache');
 
 task( 'deploy', [
