@@ -2,12 +2,12 @@
 	$link = papi_get_field( $module->ID, 'link');
 
 
-	///$count = (int)papi_get_field( $module->ID, 'count');
-	//$count = $count ? $count : 5;
+	$count = (int)papi_get_field( $module->ID, 'count');
+	$count = $count ? $count : 5;
 
 	$args=[
         'post_type' => 'calendar',
-        'posts_per_page' => 5, //$count,
+        'posts_per_page' => $count,
 	    'order' => 'ASC',
 	    'orderby' => 'meta_value',
 	    'meta_key' => 'start_date',
