@@ -57,7 +57,7 @@ function get_post_excerpt($post_or_post_id=null, $length = 150, $add_read_more=f
 
     $excerpt = html_entity_decode($post->post_excerpt);
     if (empty($excerpt)) {
-        $excerpt = html_entity_decode(strip_tags($post->post_content));
+        $excerpt = html_entity_decode(strip_tags(strip_shortcodes($post->post_content)));
     }
 
     if (strlen($excerpt) > $length) {
