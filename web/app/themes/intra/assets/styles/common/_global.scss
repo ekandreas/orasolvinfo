@@ -2,3 +2,16 @@
   body {
     font-family: 'Frutiger LT Std 47 Light Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+
+
+#bbpress-forums ul.bbp-lead-topic,
+#bbpress-forums ul.bbp-topics,
+#bbpress-forums ul.bbp-forums,
+#bbpress-forums ul.bbp-replies,
+#bbpress-forums ul.bbp-search-results {
+	font-size: 14px;
+	overflow: hidden;
+	border: 1px solid #eee;
+	margin-bottom: 20px;
+	clear: both;
+}
