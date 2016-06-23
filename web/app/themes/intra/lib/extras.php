@@ -1,8 +1,15 @@
 <?php
 
-add_action('template_redirect', function() {
-    if(!is_user_logged_in() && !in_array( $_SERVER['PHP_SELF'], array( '/wp/wp-login.php' )) && !is_admin()) {
-        //wp_redirect('/wp/wp-login.php?redirect_to=%3A');
+add_action('login_form', function () {
+    global $redirect_to;
+    if (!isset($_GET['redirect_to'])) {
+        $redirect_to = get_bloginfo('url');
+    }
+});
+
+add_action('template_redirect', function () {
+    if (!is_user_logged_in() && !in_array($_SERVER['PHP_SELF'], array( '/wp/wp-login.php' )) && !is_admin()) {
+        wp_redirect('/wp/wp-login.php');
     }
 });
 
@@ -59,10 +66,12 @@ function get_post_excerpt($post_or_post_id=null, $length = 150, $add_read_more=f
             $line=$match[0];
         }
 
-         $excerpt = $line . '...';
+        $excerpt = $line . '...';
     }
 
-    if( $add_read_more ) $excerpt .= '<br/>Läs mer!';
+    if ($add_read_more) {
+        $excerpt .= '<br/>Läs mer!';
+    }
 
     return wp_kses_post($excerpt);
 }
@@ -73,10 +82,10 @@ function get_post_excerpt($post_or_post_id=null, $length = 150, $add_read_more=f
  * SMTP configuration to pass all emails (even non-templated ones) 
  * through Mandrill.
  */
-add_action( 'phpmailer_init', 'mandrill_emailer_phpmailer_init' );
-function mandrill_emailer_phpmailer_init( $phpmailer ) {
- 
-$phpmailer->isSMTP();
+add_action('phpmailer_init', 'mandrill_emailer_phpmailer_init');
+function mandrill_emailer_phpmailer_init($phpmailer)
+{
+    $phpmailer->isSMTP();
     $phpmailer->SMTPAuth = true;
     $phpmailer->SMTPSecure = "tls";
      
@@ -89,16 +98,16 @@ $phpmailer->isSMTP();
   
     // From email and name
     $from_name = papi_get_option("mandrill_emailer_from_name");
-    if ( ! isset( $from_name ) ) {
+    if (! isset($from_name)) {
         $from_name = 'WordPress';
     }
  
-    $from_email = papi_get_option("mandrill_emailer_from_email");        
-    if ( ! isset( $from_email ) ) {
+    $from_email = papi_get_option("mandrill_emailer_from_email");
+    if (! isset($from_email)) {
         // Get the site domain and get rid of www.
-        $sitename = strtolower( $_SERVER['SERVER_NAME'] );
-        if ( 'www.' == substr( $sitename, 0, 4 )  ) {
-            $sitename = substr( $sitename, 4 );
+        $sitename = strtolower($_SERVER['SERVER_NAME']);
+        if ('www.' == substr($sitename, 0, 4)) {
+            $sitename = substr($sitename, 4);
         }
          
         $from_email = 'wordpress@' . $sitename;
@@ -106,12 +115,10 @@ $phpmailer->isSMTP();
      
     $phpmailer->From = $from_email;
     $phpmailer->FromName = $from_name;
-     
 }
 
-add_action('login_head', function() {
+add_action('login_head', function () {
     echo '<style type="text/css">
         h1 a {background-image: url('.get_bloginfo('template_directory').'/dist/images/orasolv_303x85.png) !important; }
     </style>';
 });
-
