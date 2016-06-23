@@ -1,7 +1,7 @@
 <?php
 
 add_action('template_redirect', function() {
-    if(!in_array( $_SERVER['PHP_SELF'], array( '/wp/wp-login.php' )) && !is_admin()) {
+    if(!is_user_logged_in() && !in_array( $_SERVER['PHP_SELF'], array( '/wp/wp-login.php' )) && !is_admin()) {
         wp_redirect('wp-login.php');
     }
 });

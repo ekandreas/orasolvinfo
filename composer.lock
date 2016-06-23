@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2714c57a34635c9fbfd84575f3c4bc41",
-    "content-hash": "201bbd3467f8fb4a859f66872e9c3f74",
+    "hash": "7e40f364107de92586a20f2617c54ab4",
+    "content-hash": "933c7f89dc5fee0d9d2fc403c5f22cdb",
     "packages": [
         {
             "name": "composer/installers",
@@ -580,16 +580,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.2",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add"
+                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/e992d00a34ea84d55c80023d27d5bcb839069add",
-                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
+                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
                 "shasum": ""
             },
             "require": {
@@ -613,7 +613,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-05-06 18:16:20"
+            "time": "2016-06-21 16:31:21"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -998,16 +998,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.2.1",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "63f37b9395e8041cd4313129c08ece896d06ca8e"
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/63f37b9395e8041cd4313129c08ece896d06ca8e",
-                "reference": "63f37b9395e8041cd4313129c08ece896d06ca8e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
                 "shasum": ""
             },
             "require": {
@@ -1019,7 +1019,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -1044,20 +1044,20 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-04-15 10:48:49"
+            "time": "2016-06-14 14:14:52"
         },
         {
             "name": "wp-papi/papi",
-            "version": "v3.0.9",
+            "version": "v3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-papi/papi.git",
-                "reference": "6ad92d5d12397a1cde7812d0673a249a25a542a2"
+                "reference": "b5f6d8aa9d581bd9860196b2184990fc9846da01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-papi/papi/zipball/6ad92d5d12397a1cde7812d0673a249a25a542a2",
-                "reference": "6ad92d5d12397a1cde7812d0673a249a25a542a2",
+                "url": "https://api.github.com/repos/wp-papi/papi/zipball/b5f6d8aa9d581bd9860196b2184990fc9846da01",
+                "reference": "b5f6d8aa9d581bd9860196b2184990fc9846da01",
                 "shasum": ""
             },
             "require": {
@@ -1094,7 +1094,27 @@
                 "page type",
                 "wordpress"
             ],
-            "time": "2016-05-25 08:45:28"
+            "time": "2016-06-20 10:46:45"
+        },
+        {
+            "name": "wpackagist-plugin/bbpress",
+            "version": "2.5.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bbpress/",
+                "reference": "tags/2.5.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bbpress.2.5.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bbpress/"
         },
         {
             "name": "wpackagist-plugin/disable-emojis",
@@ -1118,15 +1138,15 @@
         },
         {
             "name": "wpackagist-plugin/groups",
-            "version": "1.10.2",
+            "version": "1.10.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/groups/",
-                "reference": "tags/1.10.2"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/groups.1.10.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/groups.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1158,15 +1178,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "2.4.4",
+            "version": "2.4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.4.4"
+                "reference": "tags/2.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.2.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.2.4.5.zip",
                 "reference": null,
                 "shasum": null
             },

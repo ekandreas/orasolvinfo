@@ -48,6 +48,39 @@ class Cpt
                     'plural'   => __('Moduler','intra'),
                 ] );
 
+                register_extended_post_type( 'calendar', [
+                    'has_archive' => false,
+                    'show_ui' => true,
+                    'show_in_menu' => true,
+                    'show_in_feed' => false,
+                    'supports' => array( 'title' ),
+                    'labels' => [
+                        'name'                  => __('Kalender','intra'),
+                        'singular_name'         => __('Kalender','intra'),
+                        'menu_name'             => __('Kalender','intra'),
+                        'name_admin_bar'        => __('Kalender','intra'),
+                        'add_new'               => __('Skapa ny','intra'),
+                        'add_new_item'          => __('Skapa ny kalenderhändelse','intra'),
+                        'edit_item'             => __('Ändra kalenderhändelse','intra'),
+                        'new_item'              => __('Ny händelse','intra'),
+                        'view_item'             => __('Visa händelse','intra'),
+                        'search_items'          => __('Sök händelser','intra'),
+                        'not_found'             => __('Inga händelser funna','intra'),
+                        'not_found_in_trash'    => __('Inga händelser i papperskorg','intra'),
+                        'parent_item_colon'     => __('Förälder:','intra'),
+                        'all_items'             => __('Kalenderhändelser','intra'),
+                        'archives'              => __('Arkiv','intra'),
+                        'insert_into_item'      => __('Lägg till i kalender','intra'),
+                        'uploaded_to_this_item' => __('Uppladdat till kalender','intra'),
+                        'filter_items_list'     => __('Filtrera listan','intra'),
+                        'items_list_navigation' => __('Listnavigering','intra'),
+                        'items_list'            => __('Lista','intra'),
+                    ],
+                ], [
+                    'singular' => __('Modul','intra'),
+                    'plural'   => __('Moduler','intra'),
+                ] );
+
                 register_extended_post_type( 'link', [
                     'has_archive' => true,
                     'show_ui' => true,

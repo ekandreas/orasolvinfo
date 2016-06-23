@@ -49,7 +49,8 @@
     "wpackagist-plugin/resize-image-after-upload":"*",
     "ekandreas/bladerunner":"*",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "*",
-    "wpackagist-plugin/mce-table-buttons": "*"    
+    "wpackagist-plugin/mce-table-buttons": "*",
+    "wpackagist-plugin/bbpress": "*"    
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
