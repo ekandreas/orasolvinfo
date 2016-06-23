@@ -4,14 +4,11 @@
   }
 
 
-#bbpress-forums ul.bbp-lead-topic,
-#bbpress-forums ul.bbp-topics,
-#bbpress-forums ul.bbp-forums,
-#bbpress-forums ul.bbp-replies,
-#bbpress-forums ul.bbp-search-results {
-	font-size: 14px;
-	overflow: hidden;
-	border: 1px solid #eee;
-	margin-bottom: 20px;
-	clear: both;
+.agenda .dayofmonth {
+	font-size:36px;
+	font-weight:bold;
+	line-height:36px;
+	padding-top:6px;	
+	color:fff !important;
+	background-color: #c33;
 }
