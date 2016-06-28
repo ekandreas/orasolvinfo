@@ -3,12 +3,12 @@
     <div class="clearfix">
       <div class="footer-logo"><a href="/">{{ bloginfo('name') }}</a></div>
       <dl class="footer-nav">
-        <dt class="nav-title">Länkgrupp 1</dt>
-        <dd class="nav-item"><a href="/">Donec</a></dd>
-        <dd class="nav-item"><a href="/">Ullamcorper</a></dd>
-        <dd class="nav-item"><a href="/">Nulla non</a></dd>
-        <dd class="nav-item"><a href="/">Auctor</a></dd>
-        <dd class="nav-item"><a href="/">Fringilla</a></dd>
+        <dt class="nav-title">Meta</dt>
+        <dd class="nav-item"><?=wp_loginout()?></dd>
+        <dd class="nav-item"><a href="<?=get_edit_user_link()?>">Profil</a></dd>
+        <dd class="nav-item"><a href="<?=wp_lostpassword_url()?>">Glömt lösenord</a></dd>
+        <dd class="nav-item"><a href="/wp/wp-admin">WordPress Admin</a></dd>
+        <dd class="nav-item"><a href="mailto:info@orasolv.se">Hjälp</a></dd>
       </dl>
       <dl class="footer-nav">
         <dt class="nav-title">Länkgrupp 2</dt>
@@ -30,7 +30,7 @@
         <dd class="nav-item"><a href="/">Pellentesque</a></dd>
       </dl>
     </div>
-    <div class="footer-copyright text-center">Orasolc info intranät</div>
+    <div class="footer-copyright text-center">Orasolv intranät</div>
   </div>
 </div>
 
