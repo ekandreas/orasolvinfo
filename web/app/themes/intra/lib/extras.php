@@ -78,6 +78,10 @@ function get_post_excerpt($post_or_post_id=null, $length = 150, $add_read_more=f
 
 
 
+add_filter( 'show_admin_bar' , function() {
+    return ( current_user_can( 'administrator' ) ) ? true : false;
+});
+
 /** 
  * SMTP configuration to pass all emails (even non-templated ones) 
  * through Mandrill.
