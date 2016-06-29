@@ -14,7 +14,7 @@
 
 		<?php 
 			$length = (int)papi_get_field( $module->id, 'excerpt_length' );
-			$args=['post_type'=>'post'];
+			$args=['post_type'=>'post','posts_per_page'=>-1];
 			if($cat_list!='') {
 				$args['cat'] = $cat_list;
 			}

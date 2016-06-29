@@ -12,6 +12,7 @@
 		            	'compare' => 'LIKE'
             		]
             	],
+            	'posts_per_page'=>-1,
             ];
             $medialist = get_posts($args);
             $show_as = papi_get_field($module->id, 'show_as');
