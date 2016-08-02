@@ -81,6 +81,39 @@ class Cpt
                     'plural'   => __('Moduler','intra'),
                 ] );
 
+                register_extended_post_type( 'todo', [
+                    'has_archive' => false,
+                    'show_ui' => true,
+                    'show_in_menu' => true,
+                    'show_in_feed' => false,
+                    'supports' => array( 'title' ),
+                    'labels' => [
+                        'name'                  => __('ToDo','intra'),
+                        'singular_name'         => __('ToDo','intra'),
+                        'menu_name'             => __('ToDo','intra'),
+                        'name_admin_bar'        => __('ToDo','intra'),
+                        'add_new'               => __('Skapa ny','intra'),
+                        'add_new_item'          => __('Skapa ny ToDo','intra'),
+                        'edit_item'             => __('Ändra ToDo','intra'),
+                        'new_item'              => __('Ny ToDo','intra'),
+                        'view_item'             => __('Visa ToDo','intra'),
+                        'search_items'          => __('Sök ToDo','intra'),
+                        'not_found'             => __('Inga ToDo funna','intra'),
+                        'not_found_in_trash'    => __('Inga ToDo i papperskorg','intra'),
+                        'parent_item_colon'     => __('Förälder:','intra'),
+                        'all_items'             => __('ToDo-händelser','intra'),
+                        'archives'              => __('Arkiv','intra'),
+                        'insert_into_item'      => __('Lägg till i ToDo','intra'),
+                        'uploaded_to_this_item' => __('Uppladdat till ToDo','intra'),
+                        'filter_items_list'     => __('Filtrera listan','intra'),
+                        'items_list_navigation' => __('Listnavigering','intra'),
+                        'items_list'            => __('Lista','intra'),
+                    ],
+                ], [
+                    'singular' => __('ToDo','intra'),
+                    'plural'   => __('ToDo','intra'),
+                ] );
+
                 register_extended_post_type( 'link', [
                     'has_archive' => true,
                     'show_ui' => true,
